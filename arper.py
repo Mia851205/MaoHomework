@@ -1,10 +1,10 @@
 from scapy.all import *
 import os, sys, threading, signal
 
-interface = sys.argv[1]
-target_ip = sys.argv[2]
-gateway_ip = sys.argv[3]
-packet_count = 1000
+interface = sys.argv[1] //改成en0
+target_ip = sys.argv[2] //改成 172.21.14.57
+gateway_ip = sys.argv[3] //改成 172.21.14.56
+packet_count = 1000 //傳送1000個封包
 
 conf.iface = interface # set up the interface
 conf.verb = 0 # turn off output
